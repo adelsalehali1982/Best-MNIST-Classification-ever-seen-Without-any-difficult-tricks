@@ -1,5 +1,5 @@
 # Best-MNIST-Classification-ever-seen-Without-any-difficult-tricks
-Classification of MNIST digits by  convolutional neural networks  and  then extracting features. After that I tune the to classes labels using simple neural network  The code is written using Keras deep learning librar
+#Classification of MNIST digits by  convolutional neural networks  and  then extracting features. After that I tune the to classes labels using simple neural network  The code is written using Keras deep learning librar
 
 
 import os,random
