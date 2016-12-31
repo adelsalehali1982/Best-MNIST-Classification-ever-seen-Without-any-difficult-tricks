@@ -111,3 +111,6 @@ output_v=Dense(10,activation='sigmoid',init='glorot_normal')(input_v)
 Transformer= Model(input_v, output_v)
 Transformer.compile(optimizer=adm, loss='binary_crossentropy',metrics=['accuracy'])
 Transformer.fit(Ftr, y_train, validation_data=(Fts, y_test),nb_epoch=2000,batch_size=1000,shuffle=True,verbose=1)
+
+scores = Transformer.evaluate(Fts, y_test, verbose=0)
+print("Baseline Error X_test test: %.2f%%" % (100-scores[1]*100))
