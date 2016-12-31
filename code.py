@@ -103,7 +103,7 @@ Fts=Extractor.predict(X_test)
 
 
 import keras 
-adm=keras.optimizers.Adam(lr=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
+adm=keras.optimizers.Adam(lr=0.2, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
 
 
 input_v=Input(shape=[256])
